@@ -15,6 +15,12 @@
       "to": "#07C983"
     }
   },
+  "redirects": [
+    {
+        "source": "quickstart",
+        "destination": "introduction"
+    }
+  ],
   "topbarLinks": [
     {
       "name": "Support",

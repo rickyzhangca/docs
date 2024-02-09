@@ -17,8 +17,8 @@
   },
   "redirects": [
     {
-        "source": "quickstart",
-        "destination": "introduction"
+        "source": "/quickstart",
+        "destination": "/introduction"
     }
   ],
   "topbarLinks": [

@@ -24,6 +24,10 @@
         "source": "/essentials/:slug*",
         "destination": "/introduction"
     }
+    {
+        "source": "/test1/:slug*",
+        "destination": "/test2/:slug*"
+    }
   ],
   "topbarLinks": [
     {

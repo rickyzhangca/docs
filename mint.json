@@ -27,6 +27,10 @@
     {
         "source": "/test1/:slug*",
         "destination": "/test2/:slug*"
+    },
+    {
+        "source": "/test3/:slug*",
+        "destination": "/test2/:slug*"
     }
   ],
   "topbarLinks": [

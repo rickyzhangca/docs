@@ -19,6 +19,10 @@
     {
         "source": "/quickstart",
         "destination": "/introduction"
+    },
+    {
+        "source": "/essentials/:slug*",
+        "destination": "/introduction"
     }
   ],
   "topbarLinks": [

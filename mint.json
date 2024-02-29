@@ -72,7 +72,7 @@
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "Tests",
+      "group": "",
       "pages": ["test1/test", "test2/test"]
     },
     {

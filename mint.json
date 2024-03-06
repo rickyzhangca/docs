@@ -68,6 +68,10 @@
   ],
   "navigation": [
     {
+      "group": "Test",
+      "pages": ["test"]
+    },
+    {
       "group": "Get Started",
       "pages": ["introduction", "quickstart", "development"]
     },

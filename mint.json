@@ -66,6 +66,7 @@
       "url": "https://mintlify.com/blog"
     }
   ],
+  "versions": ["v1", "v2"],
   "navigation": [
     {
       "group": "Test",
@@ -76,8 +77,14 @@
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "",
-      "pages": ["test1/test", "test2/test"]
+      "group": "testtt1",
+      "pages": ["test1/test"],
+      "version": "v1"
+    },
+    {
+      "group": "testtt2",
+      "pages": ["test2/test"],
+      "version": "v2"
     },
     {
       "group": "Essentials",

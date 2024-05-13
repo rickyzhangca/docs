@@ -1,111 +1,208 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Test",
+  "name": "Mintlify",
   "logo": {
+    "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "href": "https://mintlify.com"
   },
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0D9373",
-    "light": "#07C983",
+    "light": "#55D799",
     "dark": "#0D9373",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#117866",
+      "to": "#2AB673"
     }
   },
-  "redirects": [
-    {
-        "source": "/quickstart",
-        "destination": "/introduction"
-    },
-    {
-        "source": "/essentials/:slug*",
-        "destination": "/introduction"
-    },
-    {
-        "source": "/test1/:slug*",
-        "destination": "/test2/:slug*"
-    },
-    {
-        "source": "/test3/:slug*",
-        "destination": "/test2/:slug*"
+  "api": {
+    "auth": {
+      "method": "bearer"
     }
-  ],
+  },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Community",
+      "url": "https://mintlify.com/community"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get Started",
+    "url": "https://mintlify.com/start"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Components",
+      "url": "content",
+      "isDefaultHidden": true
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Integrations",
+      "url": "integrations"
     }
   ],
-  "versions": ["v1", "v2"],
+  "redirects": [{
+    "source": "integrations/support1/overview",
+    "destination": "integrations/support2/overview"
+  }],
   "navigation": [
     {
-      "group": "Test",
-      "pages": ["test"]
-    },
-    {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "testtt1",
-      "pages": ["test1/test"],
-      "version": "v1"
-    },
-    {
-      "group": "testtt2",
-      "pages": ["test2/test"],
-      "version": "v2"
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Getting Started",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "quickstart",
+        "development",
+        "settings/global",
+        "settings/navigation"
+      ]
+    },
+    {
+      "group": "Writing Content",
+      "pages": [
+        "page",
+        "text",
+        "image-embeds",
+        "list-table",
+        "code",
+        "reusable-snippets"
+      ]
+    },
+    {
+      "group": "API References",
+      "pages": [
+        "api-playground/overview",
+        {
+          "group": "Using OpenAPI",
+          "pages": [
+            "api-playground/openapi/setup",
+            "api-playground/openapi/writing-openapi",
+            "api-playground/openapi/advanced-features"
+          ]
+        },
+        {
+          "group": "Using MDX",
+          "pages": [
+            "api-playground/mdx/configuration",
+            "api-playground/mdx/authentication"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Configurations",
+      "pages": [
+        "settings/custom-domain",
+        "settings/seo",
+        "settings/broken-links",
+        "settings/versioning",
+        "settings/add-members"
+      ]
+    },
+    {
+      "group": "Analytics",
+      "pages": [
+        "integrations/analytics/overview",
+        "integrations/analytics/amplitude",
+        "integrations/analytics/clearbit",
+        "integrations/analytics/fathom",
+        "integrations/analytics/google-analytics",
+        "integrations/analytics/google-tag-manager",
+        "integrations/analytics/heap",
+        "integrations/analytics/hotjar",
+        "integrations/analytics/koala",
+        "integrations/analytics/logrocket",
+        "integrations/analytics/mixpanel",
+        "integrations/analytics/pirsch",
+        "integrations/analytics/plausible",
+        "integrations/analytics/posthog"
+      ]
+    },
+    {
+      "group": "Support1",
+      "pages": [
+        "integrations/support1/overview",
+        "integrations/support1/intercom",
+        "integrations/support1/front"
+      ]
+    },
+    {
+      "group": "Support2",
+      "pages": [
+        "integrations/support2/overview",
+        "integrations/support2/intercom",
+        "integrations/support2/front"
+      ]
+    },
+    {
+      "group": "Privacy",
+      "pages": [
+        "integrations/privacy/overview",
+        "integrations/privacy/osano"
+      ]
+    },
+    {
+      "group": "Custom Subpaths",
+      "pages": [
+        "integrations/subpath/cloudflare",
+        "integrations/subpath/route53-cloudfront"
+      ]
+    },
+    {
+      "group": "Custom Scripts",
+      "pages": [
+        "integrations/custom/css",
+        "integrations/custom/js"
+      ]
+    },
+    {
+      "group": "SDKs",
+      "pages": [
+        "integrations/sdks/speakeasy"
+      ]
+    },
+    {
+      "group": "Components",
+      "pages": [
+        "content/components/accordions",
+        "content/components/accordion-groups",
+        "content/components/callouts",
+        "content/components/cards",
+        "content/components/card-groups",
+        "content/components/code",
+        "content/components/code-groups",
+        "content/components/frames",
+        "content/components/icons",
+        "content/components/mermaid-diagrams",
+        "content/components/steps",
+        "content/components/tabs",
+        "content/components/tooltips"
+      ]
+    },
+    {
+      "group": "API Components",
+      "pages": [
+        "content/components/params",
+        "content/components/responses",
+        "content/components/expandables",
+        "content/components/sticky-examples"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "slack": "https://mintlify.com/community",
+    "x": "https://x.com/mintlify"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-RCYWHL7EQ7"
+    },
+    "koala": {
+      "publicApiKey": "pk_76a6caa274e800f3ceff0b2bc6b9b9d82ab8"
+    }
   }
 }

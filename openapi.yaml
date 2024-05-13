@@ -1,0 +1,76 @@
+openapi: 3.0.0
+info:
+  title: Example API
+  version: 1.0.0
+servers:
+  # - url: https://api.example.com/v1
+  #   description: Production server (uses live data)
+  - url: https://{username}.server.com:{port}/{version}
+    variables:
+      username:
+        default: demo
+        description: This value is assigned by the service provider.
+      port:
+        enum:
+          - "8443"
+          - "443"
+        default: "8443"
+      version:
+        default: v1
+  - url: https://{username2}.server.com:{port2}/{version2}
+    variables:
+      username2:
+        default: demo
+        description: This value is assigned by the service provider.
+      port2:
+        enum:
+          - "8443"
+          - "443"
+        default: "8443"
+      version2:
+        default: v1
+paths:
+  /example:
+    get:
+      summary: Example endpoint
+      parameters:
+        - name: apiKey0
+          in: header
+          description: api key 0
+          required: true
+          schema:
+            type: array
+            items:
+              anyOf:
+                - type: string
+                - type: number
+                - type: integer
+                - type: boolean
+                - type: array
+                  items: {}
+                - type: object
+        - name: apiKey1
+          in: header
+          description: api key 1
+          required: true
+          schema:
+            oneOf:
+              - type: string
+                deprecated: true
+              - type: number
+        - name: apiKey2
+          in: header
+          description: api key 2
+          required: true
+          schema:
+            type: string
+            deprecated: true
+        - name: apiKey3
+          in: header
+          description: api key 3
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response

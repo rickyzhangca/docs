@@ -15,6 +15,11 @@
       "to": "#07C983"
     }
   },
+  "analytics": {
+    "segment": {
+      "key": "ElFy9lDiujVzdWs0ngpHw7OZFJONCZkd"
+    }
+  },
   "topbarLinks": [
     {
       "name": "Support",

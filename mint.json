@@ -93,5 +93,8 @@
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   },
-  "font": "Roboto Mono"
+  "font": {
+    "headings": "Poppins",
+    "body": "Playfair Display"
+  }
 }

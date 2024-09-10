@@ -97,12 +97,14 @@
     "headings": {
       "family": "Hubot Sans",
       "weight": 900,
-      "url": "https://mintlify-assets.b-cdn.net/fonts/Hubot-Sans.woff2"
+      "url": "https://mintlify-assets.b-cdn.net/fonts/Hubot-Sans.woff2",
+      "format": "woff2"
     },
     "body": {
       "family": "Mona Sans",
       "weight": 900,
-      "url": "https://mintlify-assets.b-cdn.net/fonts/Mona-Sans.woff2"
+      "url": "https://mintlify-assets.b-cdn.net/fonts/Mona-Sans.woff2",
+      "format": "woff2"
     }
   }
 }

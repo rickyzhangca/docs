@@ -98,7 +98,9 @@
       "family": "Roboto Mono",
       "weight": 900
     },
-    "body": "Playfair Display",
-    "weight": 900
+    "body": {
+      "family": "Playfair Display",
+      "weight": 900
+    }
   }
 }

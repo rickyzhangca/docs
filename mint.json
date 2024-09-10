@@ -95,12 +95,14 @@
   },
   "font": {
     "headings": {
-      "family": "Roboto Mono",
-      "weight": 900
+      "family": "Hubot Sans",
+      "weight": 900,
+      "url": "https://mintlify-assets.b-cdn.net/fonts/Hubot-Sans.woff2"
     },
     "body": {
-      "family": "Playfair Display",
-      "weight": 900
+      "family": "Mona Sans",
+      "weight": 900,
+      "url": "https://mintlify-assets.b-cdn.net/fonts/Mona-Sans.woff2"
     }
   }
 }

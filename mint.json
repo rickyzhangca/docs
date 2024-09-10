@@ -94,7 +94,11 @@
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   },
   "font": {
-    "headings": "Poppins",
-    "body": "Playfair Display"
+    "headings": {
+      "family": "Roboto Mono",
+      "weight": 900
+    },
+    "body": "Playfair Display",
+    "weight": 900
   }
 }

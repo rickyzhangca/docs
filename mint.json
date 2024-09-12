@@ -95,10 +95,10 @@
   },
   "font": {
     "headings": {
-      "family": "Roboto Mono",
+      "family": "Roboto Mono"
     },
     "body": {
-      "family": "Merriweather",
+      "family": "Merriweather"
     }
   }
 }

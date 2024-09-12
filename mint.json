@@ -94,11 +94,6 @@
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   },
   "font": {
-    "headings": {
-      "family": "Roboto Mono"
-    },
-    "body": {
-      "family": "Merriweather"
-    }
+    "family": "Roboto Mono"
   }
 }
